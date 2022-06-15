@@ -2,10 +2,10 @@ FROM --platform="linux/amd64" alpine:latest
 LABEL maintainer "Community"
 
 WORKDIR /root
-ARG TARGETPLATFORM
-ARG TAG
+COPY start.sh /usr/bin/start.sh
 COPY helloworld /usr/bin/helloworld
 COPY helloworld.json /usr/bin/helloworld.json
 RUN chmod +x /usr/bin/helloworld
+RUN chmod +x /usr/bin/start.sh
 
-CMD [ "/usr/bin/helloworld", "run", "-c", "/usr/bin/helloworld.json", ">", "/dev/null", "2>&1" ]
+CMD /usr/bin/start.sh
