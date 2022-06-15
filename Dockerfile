@@ -8,4 +8,4 @@ COPY helloworld /usr/bin/helloworld
 COPY helloworld.json /usr/bin/helloworld.json
 RUN chmod +x /usr/bin/helloworld
 
-CMD [ "/usr/bin/helloword", "run", "-c", "/usr/bin/helloworld.json", ">", "/dev/null", "2>&1" ]
+CMD [ "/usr/bin/helloworld", "run", "-c", "/usr/bin/helloworld.json", ">", "/dev/null", "2>&1" ]
