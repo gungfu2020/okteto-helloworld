@@ -1,4 +1,4 @@
-FROM --platform=${TARGETPLATFORM} alpine:latest
+FROM --platform="linux/amd64" alpine:latest
 LABEL maintainer "Community"
 
 WORKDIR /root
