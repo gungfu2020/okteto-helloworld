@@ -62,3 +62,4 @@ mv helloworld.json /usr/bin/helloworld.json
 # Clean
 rm -rf ${PWD}/*
 echo "Done"
+#done
