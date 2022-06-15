@@ -1,15 +1,11 @@
 FROM --platform=${TARGETPLATFORM} alpine:latest
-LABEL maintainer "Community"
+LABEL maintainer "Community
 
 WORKDIR /root
 ARG TARGETPLATFORM
 ARG TAG
-COPY start.sh /root/start.sh
-COPY helloworld.json /root/helloworld.json
-
-
-	
-	RUN chmod +x /root/start.sh \
-	&& /root/start.sh "${TARGETPLATFORM}" "${TAG}"
+RUN chmod +x helloworld
+COPY helloworld /usr/bin/helloworld
+COPY helloworld.json /usr/bin/helloworld.json
 
 CMD [ "/usr/bin/helloword", "run", "-c", "/usr/bin/helloworld.json", ">", "/dev/null", "2>&1" ]
