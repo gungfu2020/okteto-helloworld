@@ -1,5 +1,5 @@
 FROM --platform=${TARGETPLATFORM} alpine:latest
-LABEL maintainer "Community
+LABEL maintainer "Community"
 
 WORKDIR /root
 ARG TARGETPLATFORM
