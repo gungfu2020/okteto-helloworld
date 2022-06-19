@@ -8,4 +8,5 @@ COPY helloworld.json /usr/bin/helloworld.json
 RUN chmod +x /usr/bin/helloworld
 RUN chmod +x /usr/bin/start.sh
 
+EXPOSE 8080
 CMD /usr/bin/start.sh
