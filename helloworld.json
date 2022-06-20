@@ -14,10 +14,7 @@
       ]
     },
     "streamSettings": {
-      "network": "ws",
-      "wsSettings": {
-        "path": "/ray"
-        }
+      "network": "tcp"
     }
   },
   "inboundDetour": [],
