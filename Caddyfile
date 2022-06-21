@@ -7,4 +7,4 @@ respond "Hello, world!"
 	header Connection Upgrade
 	header Upgrade websocket
 }
-reverse_proxy @helloworld_websocket localhost:8089
+reverse_proxy @helloworld_websocket 127.0.0.1:8089
