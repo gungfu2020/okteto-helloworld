@@ -4,7 +4,7 @@
   },
   "inbound": {
     "protocol": "vmess",
-    "port": 8080,
+    "port": 8089,
     "settings": {
       "clients": [
         {
@@ -14,7 +14,10 @@
       ]
     },
     "streamSettings": {
-      "network": "tcp"
+      "network": "ws",
+      "wsSettings": {
+        "path": "/ray"
+        }
     }
   },
   "inboundDetour": [],
