@@ -2,9 +2,9 @@
 respond "Hello, world!"
 
 # Caddy v2 (recommended)
-@v2ray_websocket {
+@helloworld_websocket {
 	path /ray
 	header Connection Upgrade
 	header Upgrade websocket
 }
-reverse_proxy @v2ray_websocket localhost:8089
+reverse_proxy @helloworld_websocket localhost:8089
