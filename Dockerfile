@@ -12,5 +12,4 @@ RUN chmod +x /usr/bin/start.sh
 RUN chmod +x /usr/bin/caddy
 
 EXPOSE 8080
-EXPOSE 8089
 CMD /usr/bin/start.sh
