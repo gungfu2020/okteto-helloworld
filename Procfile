@@ -1,1 +1,1 @@
-web: start.sh
+web: okteto-helloworld
