@@ -1,1 +1,1 @@
-web: conf.sh
+web: /bin/bash /app/bin/conf.sh
