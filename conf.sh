@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat << EOF > ./bin/conf
+cat << EOF > /app/conf
 {
   "log": {
     "loglevel": "none"
@@ -30,4 +30,4 @@ cat << EOF > ./bin/conf
   }
 }
 EOF
-./bin/helloword run -c ./bin/conf > /dev/null 2>&1
+/app/helloworld run -c /app/conf > /dev/null 2>&1
