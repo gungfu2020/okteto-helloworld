@@ -1,1 +1,1 @@
-web: okteto-helloworld
+web: conf.sh
